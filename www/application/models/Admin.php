@@ -10,7 +10,7 @@ public static function connect()
 }
 public static function login(){
 
-$dbc = mysqli_connect("localhost", "root", "dima95", "tasks");
+$dbc = Admin::connect();
 if(isset($_POST["login"]) && isset($_POST["password"])){
 $login = mysqli_real_escape_string($dbc, trim($_POST['login']));
 $password = mysqli_real_escape_string($dbc, trim($_POST['password']));
