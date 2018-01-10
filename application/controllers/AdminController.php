@@ -2,7 +2,7 @@
 include_once(ROOT.'/models/Admin.php');
 include_once(ROOT.'/core/Controller.php');
 
-//namespace application\controllers;
+
 
 use application\models\Admin;
 
@@ -10,7 +10,6 @@ class AdminController extends Controller
 {
     public function actionIndex($params = null)
     {
-
         session_start();
 
         if (isset($_SESSION['admin'])) {

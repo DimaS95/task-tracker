@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Дима
- * Date: 10.01.2018
- * Time: 15:27
- */
+
 class Controller
 {
     protected $post;

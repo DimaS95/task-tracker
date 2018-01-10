@@ -1,6 +1,6 @@
 <?php
 include_once ROOT.'/models/Task.php';
-//namespace application\controllers;
+
 include_once(ROOT . '/core/Controller.php');
 use application\models\Task;
 

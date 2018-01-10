@@ -1,7 +1,5 @@
 <?php
 
-
-
 namespace application\models;
 
 include(ROOT.'/models/class.upload_0.32.php');
@@ -82,7 +80,7 @@ public static function sortedTasks($params)
    
     
     $tasks = $db->prepare("SELECT * FROM user_task ORDER BY $sort");
-    //print_r($db->prepare("SELECT * FROM user_task ORDER BY $sort"));
+
    
     $tasks->execute();
     $tasks = $tasks->fetchAll(PDO::FETCH_ASSOC);

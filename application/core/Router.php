@@ -29,13 +29,11 @@ class Router
 			if(preg_match("~$uriPattern~", $uri)) {
 
 				$segments = explode('/', $path);
-                //print_r($s)
+
 				$controllerName = array_shift($segments).'Controller';
 				$controllerName = ucfirst($controllerName);
 
-				//print_r($controllerName);
-
-				$actionName = 'action'.ucfirst((array_shift($segments)));
+                $actionName = 'action'.ucfirst((array_shift($segments)));
 
 				$controllerFile = ROOT . '/controllers/' .$controllerName. '.php';
 				if (file_exists($controllerFile)) {
